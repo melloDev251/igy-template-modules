@@ -1,0 +1,120 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100&family=Montserrat:wght@100;200;300;400;500;600;700&family=Permanent+Marker&family=Poppins:wght@100;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import "node_modules/material-icons/iconfont/material-icons.scss";
+// Break-point
+$mediaMobile: 640px;
+$mediaTabPortrait: 768px;
+$mediaTabLandscap: 1024px;
+$mediaDesktop: 1280px;
+$mediaHD: 1360px;
+$mediaFullHd: 1920px;
+$mediaRetina: 2048px;
+$mediaQHD: 2560;
+$mediaQHDPlus: 2560px;
+$mediaUHD: 3840px;
+// Couleurs
+$orange: #ff6600;
+$vert: #147347;
+$vert-second: #069697;
+$rouge: #ff3b27;
+$bleu: #367bf5;
+$gris: #0c2218;
+$blanc: #ffffff;
+// Nuace de gris
+$gris-1: #f7f9fa;
+$gris-2: #f1f3f4;
+$gris-3: #e3e5e5;
+$gris-4: #c6cacc;
+$gris-5: #919699;
+$gris-6: #5e6366;
+$gris-7: #3e4345;
+// Ombre
+$shadow-1: 0px 2px 4px rgba(8,
+35,
+48,
+0.24);
+$shadow-2: 0px 4px 8px rgba(8,
+35,
+48,
+0.24);
+$shadow-3: 0px 8px 16px rgba(8,
+35,
+48,
+0.2);
+$shadow-4: 0px 4px 4px rgba(0,
+0,
+0,
+0.25);
+$shadow-5: 0px 24px 32px rgba(8,
+35,
+48,
+0.12);
+$shadow-6: 0px 4px 8px rgba(54,
+123,
+245,
+0.24);
+$shadow-7: 0px 16px 24px rgba(54,
+123,
+245,
+0.2);
+$shadow-8: 0px 4px 8px rgba(47,
+168,
+79,
+0.24);
+$shadow-9: 0px 16px 24px rgba(47,
+168,
+79,
+0.2);
+$card-shadow: 0px 16px 24px rgba(0,
+0,
+0,
+0.06),
+0px 2px 6px rgba(0,
+0,
+0,
+0.04),
+0px 0px 1px rgba(0,
+0,
+0,
+0.04);
+// IMPORT VAARIABLE @ANDRINIAINA
+$theme-color-green: #50bd61;
+$theme-color-ligth-green: #0cb465;
+$theme-color-dark-green-1: #238846;
+$theme-color-dark-green: #00341c;
+$theme-color-dark-green-2: #0c4c28;
+$theme-color-green-hover: #13582b;
+$theme-color-item-active: #1b252938;
+$theme-color-light-grey: #ffffff8c;
+$theme-color-blue: #4482b3;
+$theme-color-red: #ff0000;
+$theme-input-border-color: #8e8ea1;
+$theme-input-color: #afb2b8;
+$theme-color-orange: #ff9900;
+$text-light-grey: #747474;
+// font-family
+$font-Poppins: "Poppins",
+sans-serif;
+$font-Inter: "Inter",
+sans-serif;
+$font-Permanent: "Permanent",
+sans-serif;
+$font-Montserrat: "Montserrat",
+sans-serif;
+$font-Raleway: "Raleway",
+sans-serif;
+$font-Lato: "Lato",
+sans-serif;
+$font-Roboto-c: "Roboto Condensed",
+sans-serif;
+$font-Abel: "Abel",
+sans-serif;
+
+
+// Nouveau charte
+$safi_orange: #FF6633;
+$safi_blanc: #FFFFFF;
+$safi-magenta: #800080;
+$safi-magenta-fonce: #320032;
+$safi-black: #000000;
+

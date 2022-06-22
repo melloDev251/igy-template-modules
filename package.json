@@ -1,0 +1,34 @@
+{
+  "name": "igy-templates-modules",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "~12.2.0",
+    "@angular/core": "~12.2.0",
+    "@angular/material": "^12.2.13",
+    "bootstrap": "^5.1.3",
+    "material-icons": "^1.10.7"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/igy-templates-modules.mjs",
+  "es2020": "fesm2020/igy-templates-modules.mjs",
+  "esm2020": "esm2020/igy-templates-modules.mjs",
+  "fesm2020": "fesm2020/igy-templates-modules.mjs",
+  "fesm2015": "fesm2015/igy-templates-modules.mjs",
+  "typings": "igy-templates-modules.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./igy-templates-modules.d.ts",
+      "esm2020": "./esm2020/igy-templates-modules.mjs",
+      "es2020": "./fesm2020/igy-templates-modules.mjs",
+      "es2015": "./fesm2015/igy-templates-modules.mjs",
+      "node": "./fesm2015/igy-templates-modules.mjs",
+      "default": "./fesm2020/igy-templates-modules.mjs"
+    }
+  },
+  "sideEffects": false
+}

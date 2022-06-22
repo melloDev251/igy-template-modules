@@ -1,0 +1,136 @@
+// Typography
+h1 {
+  @include typography("Montserrat", 24px, 700, 20px);
+  background: linear-gradient(90deg, #800080 27.6%, #FF6633 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 20px;
+}
+h2 {
+  @include typography("Montserrat", 20px, 700, 20px);
+}
+h3 {
+  @include typography("Montserrat", 18px, 700, 20px);
+}
+h4 {
+  @include typography("Montserrat", 16px, 700, 20px);
+}
+h5 {
+  @include typography("Montserrat", 14px, 700, 20px);
+}
+P,
+div {
+  @include typography("Montserrat", 14px, 400, 20px);
+}
+span {
+  @include typography("Montserrat", 12px, 400, 20px);
+}
+a {
+  @include typography("Montserrat", 12px, 400, 20px);
+  text-decoration: none;
+  cursor: pointer;
+}
+label {
+  @include typography("Montserrat", 12px, 600, 20px);
+}
+button {
+  outline: none;
+  &:hover {
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+.cnt-form-action {
+  display: flex;
+  justify-content: flex-end;
+  > igy-button {
+    margin-left: 15px;
+  }
+}
+
+.igy-card {
+  @include card-brackground($blanc, 10px, $card-shadow);
+}
+
+// HERITAGE
+%flex-align-center {
+  display: flex;
+  justify-content: center;
+  height: 110px;
+  align-items: center;
+}
+
+.primary-btn {
+  background-color: #0cb465;
+  border-color: #0cb465;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  height: 35px;
+  width: inherit;
+}
+
+// MERGE STYLES ANDRINIAINA
+// INPUT STYLES
+.item-input-container {
+  margin-bottom: 20px;
+  .mat-form-field-wrapper {
+    margin-bottom: -1.25em;
+  }
+  input.mat-input-element,
+  span.mat-select-min-line {
+    color: #333;
+    @include typography("Montserrat", 13px, 500, 12px);
+  }
+  .mat-form-field-infix {
+    border: 1px solid $theme-input-border-color !important;
+    box-sizing: border-box;
+    height: 35px !important;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    color: $theme-input-color !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+  .mat-form-field-underline {
+    display: none;
+  }
+  .mat-form-field-label-wrapper {
+    padding-top: 0;
+    top: -0.8em;
+    overflow: visible;
+  }
+  .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label {
+    transform: translateY(-1.4815em) scale(0.85) perspective(100px)
+      translateZ(-0.6em);
+    font-size: 15px;
+    span,
+    mat-label.select-label {
+      background-color: #fff;
+      padding: 5px 10px;
+      top: 2px;
+      left: 10px;
+      position: relative;
+      color: #333;
+      font-weight: 600;
+    }
+  }
+  .mat-form-field-appearance-legacy:not(.mat-form-field-can-float.mat-form-field-should-float) {
+    .mat-form-field-label {
+      padding-left: 10px;
+    }
+  }
+  .item-validation-container {
+    span {
+      font-size: 11px;
+      color: #f96969;
+      font-weight: 600;
+    }
+  }
+}

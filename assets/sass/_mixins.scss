@@ -1,0 +1,94 @@
+@mixin typography($font, $size, $weight, $line-height) {
+  font-family: $font, sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin v-align-center($height) {
+  display: flex;
+  align-items: center;
+  height: $height;
+  flex-direction: row;
+}
+
+@mixin card-brackground($background, $border-radius, $box-shadow) {
+  background: $background;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+@mixin background-options($images, $size, $position, $repeat) {
+  background-image: url($images);
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+
+@mixin placeholder-color($color, $focus) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    &:focus {
+      &::-webkit-input-placeholder {
+        color: $focus;
+      }
+    }
+  }
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 1;
+    &:focus {
+      &:-moz-placeholder {
+        color: $focus;
+        opacity: 1;
+      }
+    }
+  }
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+    &:focus {
+      &::-moz-placeholder {
+        color: $focus;
+        opacity: 1;
+      }
+    }
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    &:focus {
+      &:-ms-input-placeholder {
+        color: $focus;
+      }
+    }
+  }
+}
+
+@mixin lineClamp($nbr){
+  display: -webkit-box;
+  -webkit-line-clamp: $nbr;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin viewportRatio($x, $y){
+  padding-bottom: $y * 100% / $x;
+}
+
+// RESPONSIVE
+@mixin max($value) {
+  @media (max-width: $value) {
+    @content;
+  }
+}
+@mixin min($value) {
+  @media (min-width: $value) {
+    @content;
+  }
+}
+@mixin minMax($valueMin, $valueMax) {
+  @media (min-width: $valueMin) and (max-width: $valueMax) {
+    @content;
+  }
+}

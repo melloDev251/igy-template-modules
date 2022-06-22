@@ -1,0 +1,35 @@
+.fx-align-center {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+.fx-align-left {
+  width: inherit;
+  display: flex;
+  justify-content: flex-start;
+}
+.fx-align-right {
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
+}
+.bg-card-green {
+  background: rgb(227 247 225 / 20%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bg-card-orange {
+  background: #FF6633;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bg-card-gray {
+  background: #f4f4f4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bg-card-gray-2 {
+  background: #f8f8f8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bg-card-yellow {
+  background: #fff5de;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
